@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors
+// ignore_for_file: prefer_const_constructors, use_build_context_synchronously
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
@@ -6,12 +6,15 @@ import 'package:team_rescue_routes/AllScreens/login_screen.dart';
 import 'package:team_rescue_routes/AllScreens/mainscreen.dart';
 import 'package:team_rescue_routes/main.dart';
 
+// ignore: must_be_immutable
 class RegistrationScreen extends StatelessWidget {
   static const String idScreen = "register";
   TextEditingController nameTextEditingController = TextEditingController();
   TextEditingController emailTextEditingController = TextEditingController();
   TextEditingController phoneTextEditingController = TextEditingController();
   TextEditingController passwordTextEditingController = TextEditingController();
+
+  RegistrationScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -147,12 +150,13 @@ class RegistrationScreen extends StatelessWidget {
   }
 
   final FirebaseAuth _firebaseAuth = FirebaseAuth.instance;
-  registerNewUser(BuildContext context) async {
-    final firebaseUser = (await _firebaseAuth
+  void registerNewUser(BuildContext context) async {
+    final User? firebaseUser = (await _firebaseAuth
             .createUserWithEmailAndPassword(
                 email: emailTextEditingController.text,
                 password: passwordTextEditingController.text)
             .catchError((errMsg) {
+      // ignore: prefer_interpolation_to_compose_strings
       displayToastMessage("Error" + errMsg.toString(), context);
     }))
         .user;
