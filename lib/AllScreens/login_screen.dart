@@ -8,7 +8,8 @@ class LoginScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      body: SingleChildScrollView( // Add SingleChildScrollView here
+      body: SingleChildScrollView(
+        // Add SingleChildScrollView here
         child: Column(
           children: [
             SizedBox(
@@ -56,13 +57,17 @@ class LoginScreen extends StatelessWidget {
                   ),
                   ElevatedButton(
                     style: ButtonStyle(
-                      backgroundColor: MaterialStateProperty.all<Color>(Color(0xFFAD88BA)),
+                      backgroundColor:
+                          MaterialStateProperty.all<Color>(Color(0xFFAD88BA)),
                     ),
                     child: Container(
                       height: 50.0,
                       width: 50.0,
                       child: Center(
-                        child: Text("Login"),
+                        child: Text(
+                          "Login",
+                          style: TextStyle(color: Colors.white),
+                        ),
                       ),
                     ),
                     onPressed: () {
@@ -74,10 +79,14 @@ class LoginScreen extends StatelessWidget {
             ),
             ElevatedButton(
               style: ButtonStyle(
-                      backgroundColor: MaterialStateProperty.all<Color>(Color(0xFFAD88BA)),
-                    ),
+                backgroundColor:
+                    MaterialStateProperty.all<Color>(Color(0xFFAD88BA)),
+              ),
               onPressed: () {},
-              child: Text("Dont have an account? Register Here"),
+              child: Text(
+                "Dont have an account? Register Here",
+                style: TextStyle(color: Colors.white),
+              ),
             )
           ],
         ),
