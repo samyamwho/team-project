@@ -1,8 +1,10 @@
 // ignore_for_file: prefer_const_constructors
 import 'package:flutter/material.dart';
+import 'package:team_rescue_routes/AllScreens/registration_Screen.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
+  static const String idScreen = "login";
 
   @override
   Widget build(BuildContext context) {
@@ -39,7 +41,7 @@ class LoginScreen extends StatelessWidget {
                     ),
                   ),
                   SizedBox(
-                    height: 1.0,
+                    height: 5.0,
                   ),
                   TextField(
                     obscureText: true,
@@ -77,17 +79,16 @@ class LoginScreen extends StatelessWidget {
                 ],
               ),
             ),
-            ElevatedButton(
-              style: ButtonStyle(
-                backgroundColor:
-                    MaterialStateProperty.all<Color>(Color(0xFFAD88BA)),
-              ),
-              onPressed: () {},
+            TextButton(
+              onPressed: () {
+                Navigator.pushNamedAndRemoveUntil(
+                    context, RegistrationScreen.idScreen, (route) => false);
+              },
               child: Text(
                 "Dont have an account? Register Here",
-                style: TextStyle(color: Colors.white),
+                style: TextStyle(color: const Color.fromARGB(255, 0, 0, 0)),
               ),
-            )
+            ),
           ],
         ),
       ),
