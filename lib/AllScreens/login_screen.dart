@@ -94,6 +94,30 @@ class LoginScreen extends StatelessWidget {
                       }
                     },
                   ),
+                  SizedBox(
+                    height: 20.0,
+                  ),
+                    ElevatedButton(
+                    style: ButtonStyle(
+                      backgroundColor:
+                          MaterialStateProperty.all<Color>(Color.fromARGB(255, 223, 0, 0)),
+                    ),
+                    child: Container(
+                      height: 50.0,
+                      width: 150.0,
+                      child: Center(
+                        child: Text(
+                          "Emergency SOS",
+                          style: TextStyle(color: Colors.white),
+                        ),
+                      ),
+                    ),
+                    onPressed: () {
+                       Navigator.pushNamedAndRemoveUntil(
+                        context, MainScreen.idScreen, (route) => false);
+
+                    },
+                  ),
                 ],
               ),
             ),
