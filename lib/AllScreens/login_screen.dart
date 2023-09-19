@@ -18,7 +18,7 @@ class LoginScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Color.fromARGB(255, 240, 220, 243),
       body: SingleChildScrollView(
         // Add SingleChildScrollView here
         child: Column(
@@ -97,10 +97,10 @@ class LoginScreen extends StatelessWidget {
                   SizedBox(
                     height: 20.0,
                   ),
-                    ElevatedButton(
+                  ElevatedButton(
                     style: ButtonStyle(
-                      backgroundColor:
-                          MaterialStateProperty.all<Color>(Color.fromARGB(255, 223, 0, 0)),
+                      backgroundColor: MaterialStateProperty.all<Color>(
+                          Color.fromARGB(255, 223, 0, 0)),
                     ),
                     child: Container(
                       height: 50.0,
@@ -113,9 +113,8 @@ class LoginScreen extends StatelessWidget {
                       ),
                     ),
                     onPressed: () {
-                       Navigator.pushNamedAndRemoveUntil(
-                        context, MainScreen.idScreen, (route) => false);
-
+                      Navigator.pushNamedAndRemoveUntil(
+                          context, MainScreen.idScreen, (route) => false);
                     },
                   ),
                 ],
