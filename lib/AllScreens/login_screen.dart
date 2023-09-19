@@ -73,7 +73,7 @@ class LoginScreen extends StatelessWidget {
                       backgroundColor:
                           MaterialStateProperty.all<Color>(Color(0xFFAD88BA)),
                     ),
-                    child: Container(
+                    child: SizedBox(
                       height: 50.0,
                       width: 50.0,
                       child: Center(
@@ -102,7 +102,7 @@ class LoginScreen extends StatelessWidget {
                       backgroundColor: MaterialStateProperty.all<Color>(
                           Color.fromARGB(255, 223, 0, 0)),
                     ),
-                    child: Container(
+                    child: SizedBox(
                       height: 50.0,
                       width: 150.0,
                       child: Center(
@@ -173,3 +173,5 @@ class LoginScreen extends StatelessWidget {
 // git add .
 // git commit -m"login screen finished"
 // git push -u origin main
+// Hello world
+// stuck

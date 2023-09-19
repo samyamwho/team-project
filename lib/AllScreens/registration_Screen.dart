@@ -104,7 +104,7 @@ class RegistrationScreen extends StatelessWidget {
                       backgroundColor:
                           MaterialStateProperty.all<Color>(Color(0xFFAD88BA)),
                     ),
-                    child: Container(
+                    child: SizedBox(
                       height: 50.0,
                       width: 50.0,
                       child: Center(
