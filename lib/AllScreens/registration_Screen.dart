@@ -150,15 +150,12 @@ class RegistrationScreen extends StatelessWidget {
   }
 
   final FirebaseAuth _firebaseAuth = FirebaseAuth.instance;
-  void registerNewUser(BuildContext context) async {
+   registerNewUser(BuildContext context) async {
     final User? firebaseUser = (await _firebaseAuth
             .createUserWithEmailAndPassword(
                 email: emailTextEditingController.text,
                 password: passwordTextEditingController.text)
-            .catchError((errMsg) {
-      // ignore: prefer_interpolation_to_compose_strings
-      displayToastMessage("Error" + errMsg.toString(), context);
-    }))
+            .catchError((errMsg) => displayToastMessage("Error:$errMsg", context)))
         .user;
 
     if (firebaseUser != null) //user created
@@ -168,10 +165,12 @@ class RegistrationScreen extends StatelessWidget {
         "email": emailTextEditingController.text.trim(),
         "phone": phoneTextEditingController.text.trim(),
       };
-      userRef.child(firebaseUser.uid).set(userDataMap);
+      usersRef.child(firebaseUser.uid).set(userDataMap);
+      displayToastMessage("congrats your acccount is created", context);
       Navigator.pushNamedAndRemoveUntil(
           context, MainScreen.idScreen, (route) => false);
-    } else {
+    } 
+    else {
       displayToastMessage("new user has not been created", context);
     }
   }

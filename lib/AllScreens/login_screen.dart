@@ -87,10 +87,11 @@ class LoginScreen extends StatelessWidget {
                       if (passwordTextEditingController.text.length < 6) {
                         displayToastMessage(
                             "password must be 6 characters", context);
+                      } else {
+                        loginAndAuthenticateUser(context);
+                        Navigator.pushNamedAndRemoveUntil(
+                            context, MainScreen.idScreen, (route) => false);
                       }
-                      else{
-                         loginAndAuthenticateUser(context);
-                      }                      
                     },
                   ),
                 ],
@@ -127,18 +128,18 @@ class LoginScreen extends StatelessWidget {
 
     if (firebaseUser != null) //user created
     {
-      userRef.child(firebaseUser.uid).once().then( (DataSnapshot snap) {
-                if (snap.value != null) {
-                  Navigator.pushNamedAndRemoveUntil(
-                      context, MainScreen.idScreen, (route) => false);
-                  displayToastMessage(
-                      "Yayyyyyy, you have logged in successfully", context);
-                } else {
-                  _firebaseAuth.signOut();
-                  displayToastMessage(
-                      "no records font, please create new account", context);
-                }
-              } as FutureOr Function(DatabaseEvent value));
+      usersRef.child(firebaseUser.uid).once().then((DataSnapshot snap) {
+            if (snap.value != null) {
+              Navigator.pushNamedAndRemoveUntil(
+                  context, MainScreen.idScreen, (route) => false);
+              displayToastMessage(
+                  "Yayyyyyy, you have logged in successfully", context);
+            } else {
+              _firebaseAuth.signOut();
+              displayToastMessage(
+                  "no records font, please create new account", context);
+            }
+          } as FutureOr Function(DatabaseEvent value));
     } else {
       displayToastMessage("Cannot sign in ", context);
     }
