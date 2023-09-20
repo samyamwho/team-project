@@ -1,0 +1,4 @@
+#Wed Sep 20 09:19:26 NPT 2023
+base.0=/Users/nischalbasnet/Documents/team-project-mainscreen/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/nischalbasnet/Documents/team-project-mainscreen/build/flutter_plugin_android_lifecycle/intermediates/merged_res/debug/drawable/notification_tile_bg.xml",
+        "source": "/Users/nischalbasnet/.gradle/caches/transforms-3/c586a7e7bfa5c3dbcf270184f594e4bd/transformed/core-1.6.0/res/drawable/notification_tile_bg.xml"
+    },
+    {
+        "merged": "/Users/nischalbasnet/Documents/team-project-mainscreen/build/flutter_plugin_android_lifecycle/intermediates/merged_res/debug/drawable/notification_bg_low.xml",
+        "source": "/Users/nischalbasnet/.gradle/caches/transforms-3/c586a7e7bfa5c3dbcf270184f594e4bd/transformed/core-1.6.0/res/drawable/notification_bg_low.xml"
+    },
+    {
+        "merged": "/Users/nischalbasnet/Documents/team-project-mainscreen/build/flutter_plugin_android_lifecycle/intermediates/merged_res/debug/drawable/notification_bg.xml",
+        "source": "/Users/nischalbasnet/.gradle/caches/transforms-3/c586a7e7bfa5c3dbcf270184f594e4bd/transformed/core-1.6.0/res/drawable/notification_bg.xml"
+    },
+    {
+        "merged": "/Users/nischalbasnet/Documents/team-project-mainscreen/build/flutter_plugin_android_lifecycle/intermediates/merged_res/debug/drawable/notification_icon_background.xml",
+        "source": "/Users/nischalbasnet/.gradle/caches/transforms-3/c586a7e7bfa5c3dbcf270184f594e4bd/transformed/core-1.6.0/res/drawable/notification_icon_background.xml"
+    }
+]

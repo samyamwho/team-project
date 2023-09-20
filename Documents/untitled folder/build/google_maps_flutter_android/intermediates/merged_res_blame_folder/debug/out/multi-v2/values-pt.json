@@ -1,0 +1,34 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/nischalbasnet/Documents/team-project-mainscreen/build/google_maps_flutter_android/intermediates/merged_res/debug/values-pt/values-pt.xml",
+            "map": [
+                {
+                    "source": "/Users/nischalbasnet/.gradle/caches/transforms-3/c586a7e7bfa5c3dbcf270184f594e4bd/transformed/core-1.6.0/res/values-pt/values-pt.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/Users/nischalbasnet/Documents/team-project-mainscreen/build/google_maps_flutter_android/intermediates/incremental/mergeDebugResources/merged.dir/values-pt/values-pt.xml",
+            "map": [
+                {
+                    "source": "/Users/nischalbasnet/.gradle/caches/transforms-3/c586a7e7bfa5c3dbcf270184f594e4bd/transformed/core-1.6.0/res/values-pt/values-pt.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/Users/nischalbasnet/Documents/team-project-mainscreen/build/google_maps_flutter_android/intermediates/merged_res/debug/color/common_google_signin_btn_text_dark.xml",
+        "source": "/Users/nischalbasnet/.gradle/caches/transforms-3/b84c7495e34c9c511478b5f739583e45/transformed/jetified-play-services-base-18.0.1/res/color/common_google_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "/Users/nischalbasnet/Documents/team-project-mainscreen/build/google_maps_flutter_android/intermediates/merged_res/debug/color/common_google_signin_btn_tint.xml",
+        "source": "/Users/nischalbasnet/.gradle/caches/transforms-3/b84c7495e34c9c511478b5f739583e45/transformed/jetified-play-services-base-18.0.1/res/color/common_google_signin_btn_tint.xml"
+    },
+    {
+        "merged": "/Users/nischalbasnet/Documents/team-project-mainscreen/build/google_maps_flutter_android/intermediates/merged_res/debug/color/common_google_signin_btn_text_light.xml",
+        "source": "/Users/nischalbasnet/.gradle/caches/transforms-3/b84c7495e34c9c511478b5f739583e45/transformed/jetified-play-services-base-18.0.1/res/color/common_google_signin_btn_text_light.xml"
+    }
+]
